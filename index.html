@@ -20,7 +20,9 @@
           <li><a href="#">Alumni</a></li>
           <li><a href="#">Parents &amp; Families</a></li>
         </ul>
-        <button class="search-toggle" aria-label="Search">🔍</button>
+        <button class="search-toggle" aria-label="Search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
       </nav>
     </div>
   </div>
@@ -122,16 +124,59 @@
   <!-- ===== Hero Section ===== -->
   <section class="hero">
     <div class="hero-overlay"></div>
+    <div class="hero-particles" aria-hidden="true">
+      <div class="particle p1"></div>
+      <div class="particle p2"></div>
+      <div class="particle p3"></div>
+      <div class="particle p4"></div>
+      <div class="particle p5"></div>
+      <div class="particle p6"></div>
+    </div>
     <div class="hero-content">
       <div class="container">
         <h1>A purposeful university</h1>
-        <p class="hero-desc">Stanford was founded almost 150 years ago on a bedrock of societal purpose. Our mission is to contribute to the world by educating students for lives of leadership and contribution with integrity; advancing fundamental knowledge and cultivating creativity; leading in pioneering research for effective clinical therapies; and accelerating solutions that improve the human condition.</p>
+        <p class="hero-desc">Stanford was founded almost 150 years ago on a bedrock of societal purpose. Our mission is to contribute to the world by educating students for lives of leadership and contribution with integrity; advancing fundamental knowledge and cultivating creativity; and accelerating solutions that improve the human condition.</p>
         <div class="hero-actions">
-          <a href="#" class="btn btn-primary">More about Stanford</a>
+          <a href="#" class="btn btn-hero">More about Stanford</a>
+          <a href="#" class="btn btn-hero-outline">Visit Campus</a>
         </div>
       </div>
     </div>
     <div class="hero-bg"></div>
+  </section>
+
+  <!-- ===== Quick Stats Strip ===== -->
+  <section class="quick-stats">
+    <div class="container quick-stats-grid">
+      <div class="quick-stat" data-count="17000">
+        <span class="quick-stat-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </span>
+        <span class="quick-stat-num">17,000+</span>
+        <span class="quick-stat-label">Students enrolled</span>
+      </div>
+      <div class="quick-stat" data-count="2300">
+        <span class="quick-stat-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 3 3 6 3s6-1 6-3v-5"/></svg>
+        </span>
+        <span class="quick-stat-num">2,300+</span>
+        <span class="quick-stat-label">Faculty members</span>
+      </div>
+      <div class="quick-stat" data-count="8180">
+        <span class="quick-stat-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </span>
+        <span class="quick-stat-num">8,180</span>
+        <span class="quick-stat-label">Acres of campus</span>
+      </div>
+      <div class="quick-stat" data-count="22">
+        <span class="quick-stat-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </span>
+        <span class="quick-stat-num">22</span>
+        <span class="quick-stat-label">Nobel laureates</span>
+      </div>
+    </div>
   </section>
 
   <!-- ===== News & Stories ===== -->
@@ -140,16 +185,16 @@
       <h2 class="section-title">News &amp; Stories</h2>
       <div class="news-grid">
         <article class="news-feature">
-          <div class="news-img placeholder-img tall"></div>
+          <div class="news-img img-campus" role="img" aria-label="Campus illustration"></div>
           <div class="news-body">
             <span class="news-tag">Science &amp; Technology</span>
             <h3><a href="#">Stanford researchers develop new AI model for predicting protein structures</a></h3>
-            <p>New approach promises to accelerate drug discovery and deepen our understanding of biological systems.</p>
+            <p>New approach promises to accelerate drug discovery and deepen our understanding of biological systems. The model outperforms existing methods by 40% on benchmark datasets.</p>
           </div>
         </article>
         <div class="news-sidebar">
           <article class="news-mini">
-            <div class="news-img placeholder-img"></div>
+            <div class="news-img img-research" role="img" aria-label="Research illustration"></div>
             <div class="news-body">
               <span class="news-tag">Health</span>
               <h4><a href="#">Clinical trial shows promise for new cancer immunotherapy</a></h4>
@@ -157,18 +202,18 @@
             </div>
           </article>
           <article class="news-mini">
-            <div class="news-img placeholder-img"></div>
+            <div class="news-img img-event" role="img" aria-label="Event illustration"></div>
             <div class="news-body">
               <span class="news-tag">Campus</span>
-              <h4><a href="#">Stanford announces new sustainability initiative</a></h4>
+              <h4><a href="#">Stanford announces $1.2B sustainability initiative for campus operations</a></h4>
               <time datetime="2026-05-08">May 8, 2026</time>
             </div>
           </article>
           <article class="news-mini">
-            <div class="news-img placeholder-img"></div>
+            <div class="news-img img-library" role="img" aria-label="Library illustration"></div>
             <div class="news-body">
               <span class="news-tag">Arts</span>
-              <h4><a href="#">Cantor Arts Center unveils new exhibition</a></h4>
+              <h4><a href="#">Cantor Arts Center unveils "Future Visions" exhibition</a></h4>
               <time datetime="2026-05-05">May 5, 2026</time>
             </div>
           </article>
@@ -211,7 +256,7 @@
             <span class="event-day">22</span>
           </div>
           <div class="event-info">
-            <h4><a href="#">Faculty Lecture Series: Climate Futures</a></h4>
+            <h4><a href="#">Climate Futures: Faculty Lecture Series</a></h4>
             <p class="event-location">Hewlett Teaching Center</p>
             <span class="event-time">4:30 PM – 6:00 PM</span>
           </div>
@@ -236,42 +281,56 @@
   <section class="section schools-section">
     <div class="container">
       <h2 class="section-title">Academics</h2>
-      <p class="section-subtitle">Seven schools on one campus offer students boundless opportunities to pursue their passions.</p>
+      <p class="section-subtitle">Seven schools on one campus offer students boundless opportunities to pursue their passions and collaborate across disciplines.</p>
       <div class="schools-grid">
         <a href="#" class="school-card">
-          <div class="school-icon bar"></div>
+          <div class="school-icon-circle teal">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M12 12v.01"/></svg>
+          </div>
           <h3>Business</h3>
           <p>Graduate School of Business</p>
         </a>
         <a href="#" class="school-card">
-          <div class="school-icon bar teal"></div>
+          <div class="school-icon-circle gold">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+          </div>
           <h3>Engineering</h3>
           <p>School of Engineering</p>
         </a>
         <a href="#" class="school-card">
-          <div class="school-icon bar gold"></div>
+          <div class="school-icon-circle green">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
           <h3>Humanities &amp; Sciences</h3>
           <p>School of Humanities &amp; Sciences</p>
         </a>
         <a href="#" class="school-card">
-          <div class="school-icon bar green"></div>
+          <div class="school-icon-circle navy">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
           <h3>Medicine</h3>
           <p>School of Medicine</p>
         </a>
         <a href="#" class="school-card">
-          <div class="school-icon bar navy"></div>
+          <div class="school-icon-circle purple">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
           <h3>Law</h3>
           <p>Stanford Law School</p>
         </a>
         <a href="#" class="school-card">
-          <div class="school-icon bar purple"></div>
+          <div class="school-icon-circle coral">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
           <h3>Education</h3>
           <p>Graduate School of Education</p>
         </a>
         <a href="#" class="school-card">
-          <div class="school-icon bar coral"></div>
+          <div class="school-icon-circle red-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z"/><path d="M12 6v6l4 2"/><circle cx="12" cy="12" r="1"/></svg>
+          </div>
           <h3>Sustainability</h3>
-          <p>Stanford Doerr School of Sustainability</p>
+          <p>Doerr School of Sustainability</p>
         </a>
       </div>
     </div>
@@ -283,29 +342,41 @@
       <h2 class="section-title">Research &amp; Impact</h2>
       <div class="research-grid">
         <div class="research-main">
-          <div class="placeholder-img large"></div>
+          <div class="img-research large" role="img" aria-label="Research illustration"></div>
           <div class="research-body">
             <span class="news-tag">Discovery</span>
             <h3><a href="#">Advancing knowledge, accelerating solutions</a></h3>
-            <p>Stanford's culture of collaboration drives innovative discoveries that address some of the world's most urgent challenges — from climate change to human health.</p>
+            <p>Stanford's culture of collaboration drives innovative discoveries that address some of the world's most urgent challenges — from climate change to human health, from artificial intelligence to social justice.</p>
             <a href="#" class="more-link">Explore research →</a>
           </div>
         </div>
         <div class="stats-column">
           <div class="stat-card">
-            <span class="stat-number">$1.98B</span>
+            <span class="stat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </span>
+            <span class="stat-number" data-target="1.98" data-suffix="B" data-prefix="$">0</span>
             <span class="stat-label">Sponsored research budget</span>
           </div>
           <div class="stat-card">
-            <span class="stat-number">40+</span>
+            <span class="stat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            </span>
+            <span class="stat-number" data-target="40" data-suffix="+">0</span>
             <span class="stat-label">Interdisciplinary research centers</span>
           </div>
           <div class="stat-card">
-            <span class="stat-number">5,300+</span>
+            <span class="stat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            </span>
+            <span class="stat-number" data-target="5300" data-suffix="+">0</span>
             <span class="stat-label">Externally sponsored projects</span>
           </div>
           <div class="stat-card">
-            <span class="stat-number">22</span>
+            <span class="stat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </span>
+            <span class="stat-number" data-target="22">0</span>
             <span class="stat-label">Nobel laureates (current faculty)</span>
           </div>
         </div>
@@ -326,7 +397,7 @@
         </div>
       </div>
       <div class="admission-visual">
-        <div class="placeholder-img tall"></div>
+        <div class="img-student tall" role="img" aria-label="Student life illustration"></div>
       </div>
     </div>
   </section>
@@ -378,11 +449,21 @@
     <div class="footer-bottom">
       <div class="container">
         <div class="footer-social">
-          <a href="#" aria-label="Facebook">f</a>
-          <a href="#" aria-label="Twitter">𝕏</a>
-          <a href="#" aria-label="Instagram">◻</a>
-          <a href="#" aria-label="LinkedIn">in</a>
-          <a href="#" aria-label="YouTube">▶</a>
+          <a href="#" aria-label="Facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" aria-label="Twitter / X">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29.94 29.94 0 0 0 1 12a29.94 29.94 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.94 2C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2A29.94 29.94 0 0 0 23 12a29.94 29.94 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+          </a>
         </div>
         <div class="footer-legal">
           <span>© Stanford University. Stanford, California 94305.</span>
@@ -396,6 +477,11 @@
       </div>
     </div>
   </footer>
+
+  <!-- ===== Scroll to Top ===== -->
+  <button class="scroll-top" id="scroll-top" aria-label="Back to top">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
 
   <script src="js/main.js"></script>
 </body>
