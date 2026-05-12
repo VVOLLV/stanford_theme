@@ -551,7 +551,8 @@ ul { list-style: none; }
 .school-icon-circle.coral { background: var(--color-coral); }
 .school-icon-circle.red-icon { background: var(--stanford-red); }
 .school-card h3 { font-size: 1.1rem; font-weight: 700; color: var(--stanford-black); margin-bottom: 0.3rem; }
-.school-card p { font-size: 0.85rem; color: var(--stanford-gray-dark); }
+.school-card .school-subtitle { font-size: 0.8rem; color: var(--stanford-gray-dark); margin-bottom: 0.4rem; }
+.school-card .school-desc { font-size: 0.78rem; color: var(--stanford-gray); line-height: 1.5; }
 
 /* ========================================
    RESEARCH SECTION
@@ -606,11 +607,23 @@ ul { list-style: none; }
    ======================================== */
 .site-footer {
   background: var(--stanford-black); color: var(--stanford-white);
-  padding: var(--space-3xl) 0 0;
+  padding: 0;
+}
+.footer-brand {
+  padding: var(--space-2xl) 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.footer-logo {
+  font-size: 1.8rem; font-weight: 800; color: var(--stanford-white);
+  letter-spacing: -0.5px;
+}
+.footer-logo span {
+  font-size: 0.7rem; font-weight: 400; letter-spacing: 2.5px;
+  text-transform: uppercase; display: block; color: var(--stanford-gray);
 }
 .footer-grid {
-  display: grid; grid-template-columns: repeat(4, 1fr);
-  gap: var(--space-2xl); padding-bottom: var(--space-2xl);
+  display: grid; grid-template-columns: repeat(5, 1fr);
+  gap: var(--space-lg); padding: var(--space-3xl) 0 var(--space-2xl);
   border-bottom: 1px solid rgba(255,255,255,0.12);
 }
 .footer-col h4 {
@@ -671,7 +684,7 @@ ul { list-style: none; }
   .schools-grid { grid-template-columns: repeat(3, 1fr); }
   .research-grid { grid-template-columns: 1fr; }
   .admission-grid { grid-template-columns: 1fr; }
-  .footer-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: repeat(3, 1fr); }
 }
 
 /* ========================================
